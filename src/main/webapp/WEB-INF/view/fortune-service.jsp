@@ -9,20 +9,26 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Fortune Service</title>
+    <title>Fortune service</title>
+    <link type="text/css"
+          rel="stylesheet"
+          href="${pageContext.request.contextPath}/resources/css/style.css"/>
 </head>
 <body>
-    Hi! This is a wip version of the fortune service. Fortunes coming soon...
-    <form:form action="showFortune" modelAttribute="fortuneService">
-        <br><br>
-<%--        Spring uses the attribute setter to set the value--%>
-        <form:select path="fortuneType">
-            Fortunes:
-            <br><br>
-            <form:options items="${fortuneService.fortuneTypeList}"/>
-        </form:select>
-        <br><br>
-        <input type="submit" value="Submit"/>
-    </form:form>
+    <div class="container">
+        <div class="content">
+            <form:form action="showFortune" modelAttribute="fortuneService">
+                <br><br>
+        <%--        Spring uses the attribute setter to set the value--%>
+                Please select the type of fortune you wish to receive:
+                <br><br>
+                <form:select path="fortuneType">
+                    <form:options items="${fortuneService.fortuneTypeList}"/>
+                </form:select>
+                <br><br>
+                <input type="submit" value="Submit"/>
+            </form:form>
+        </div>
+    </div>
 </body>
 </html>
