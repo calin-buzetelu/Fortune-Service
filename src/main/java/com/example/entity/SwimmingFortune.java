@@ -1,17 +1,20 @@
 package com.example.entity;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
 public class SwimmingFortune implements Fortune {
 
-	private final List<String> fortunesList = List.of(
-			"May your freestyle be like lightning!",
-			"Water shall never go in your nose when you do the back stroke",
-			"Better train the dive!"
-	);
+	private final List<String> fortunesList = new ArrayList<>();
 	private Random random = new Random();
 	private String fortune;
+
+	public SwimmingFortune() {
+		fortunesList.add("May your freestyle be like lightning!");
+		fortunesList.add("Water shall never go in your nose when you do the back stroke");
+		fortunesList.add("Better train the dive!");
+	}
 
 	@Override
 	public String getFortune() {

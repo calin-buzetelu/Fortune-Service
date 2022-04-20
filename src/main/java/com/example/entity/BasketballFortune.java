@@ -1,17 +1,20 @@
 package com.example.entity;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
 public class BasketballFortune implements Fortune {
 
-	private final List<String> fortunesList = List.of(
-			"You will get all the ankles!",
-			"May your floaters reach sky high!",
-			"Your 3 pointers shall always go in!"
-	);
+	private final List<String> fortunesList = new ArrayList<>();
 	private Random random = new Random();
 	private String fortune;
+
+	public BasketballFortune() {
+		fortunesList.add("You will get all the ankles!");
+		fortunesList.add("May your floaters reach sky high!");
+		fortunesList.add("Your 3 pointers shall always go in!");
+	}
 
 	@Override
 	public String getFortune() {

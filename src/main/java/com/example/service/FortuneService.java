@@ -1,11 +1,18 @@
 package com.example.service;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class FortuneService {
 
-	private final List<String> fortuneTypeList = List.of("Football", "Basketball", "Swimming");
+	private final List<String> fortuneTypeList = new ArrayList<>();
 	private String fortuneType;
+
+	public FortuneService() {
+		fortuneTypeList.add("Football");
+		fortuneTypeList.add("Basketball");
+		fortuneTypeList.add("Swimming");
+	}
 
 	public List<String> getFortuneTypeList() {
 		return fortuneTypeList;
