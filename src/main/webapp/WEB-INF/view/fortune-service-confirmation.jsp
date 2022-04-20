@@ -17,7 +17,7 @@
     <div class="container">
         <div class="content">
             <b>Your fortune is...</b>
-            <br><br>
+            <br>
             ${fortune.fortune}
         </div>
     </div>

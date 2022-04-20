@@ -20,7 +20,7 @@
             <form:form action="showFortune" modelAttribute="fortuneService">
                 <br><br>
         <%--        Spring uses the attribute setter to set the value--%>
-                Please select the type of fortune you wish to receive:
+                <b>Please select the type of fortune you wish to receive:</b>
                 <br><br>
                 <form:select path="fortuneType">
                     <form:options items="${fortuneService.fortuneTypeList}"/>
