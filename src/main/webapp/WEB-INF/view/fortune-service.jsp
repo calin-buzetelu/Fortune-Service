@@ -1,3 +1,4 @@
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <%--
   Created by IntelliJ IDEA.
   User: Calin
@@ -12,5 +13,16 @@
 </head>
 <body>
     Hi! This is a wip version of the fortune service. Fortunes coming soon...
+    <form:form action="showFortune" modelAttribute="fortuneService">
+        <br><br>
+<%--        Spring uses the attribute setter to set the value--%>
+        <form:select path="fortuneType">
+            Fortunes:
+            <br><br>
+            <form:options items="${fortuneService.fortuneTypeList}"/>
+        </form:select>
+        <br><br>
+        <input type="submit" value="Submit"/>
+    </form:form>
 </body>
 </html>
