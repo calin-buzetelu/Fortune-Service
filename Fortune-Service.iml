@@ -19,6 +19,7 @@
       <configuration>
         <fileset id="fileset" name="Spring Application Context" removed="false">
           <file>file://$MODULE_DIR$/src/main/webapp/WEB-INF/Fortune-Service-servlet.xml</file>
+          <file>file://$MODULE_DIR$/src/main/webapp/WEB-INF/applicationContext.xml</file>
         </fileset>
       </configuration>
     </facet>
@@ -42,10 +43,14 @@
     <orderEntry type="library" scope="TEST" name="Maven: org.apiguardian:apiguardian-api:1.1.2" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.junit.jupiter:junit-jupiter-engine:5.8.1" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.junit.platform:junit-platform-engine:1.8.1" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework:spring-web:5.0.2.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-webmvc:5.0.2.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-aop:5.0.2.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-beans:5.0.2.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-context:5.0.2.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-core:5.0.2.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-jcl:5.0.2.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-expression:5.0.2.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-web:5.0.2.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: javax.activation:javax.activation-api:1.2.0" level="project" />
     <orderEntry type="library" name="Maven: javax.xml.bind:jaxb-api:2.3.0" level="project" />
     <orderEntry type="library" name="Maven: com.sun.xml.bind:jaxb-core:2.3.0" level="project" />
