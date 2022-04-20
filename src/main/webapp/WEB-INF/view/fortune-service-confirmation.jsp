@@ -9,10 +9,17 @@
 <html>
 <head>
     <title>Fortune Service Confirmation</title>
+    <link type="text/css"
+          rel="stylesheet"
+          href="${pageContext.request.contextPath}/resources/css/style.css"/>
 </head>
 <body>
-    Your fortune is...
-    <br><br>
-    ${fortune.fortune}
+    <div class="container">
+        <div class="content">
+            <b>Your fortune is...</b>
+            <br><br>
+            ${fortune.fortune}
+        </div>
+    </div>
 </body>
 </html>
