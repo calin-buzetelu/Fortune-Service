@@ -1,4 +1,4 @@
-package com.example.fortune;
+package com.example.entity;
 
 public interface Fortune {
 
