@@ -1,6 +1,7 @@
 package com.example.controller;
 
 import com.example.entity.*;
+import com.example.service.FortuneService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
