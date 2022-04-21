@@ -7,12 +7,8 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import java.util.logging.Logger;
-
 @Controller
 public class FortuneController {
-
-	private final Logger logger = Logger.getLogger(getClass().getName());
 
 	@RequestMapping("/")
 	public String showFortuneService(Model model){
