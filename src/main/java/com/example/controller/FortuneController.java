@@ -14,7 +14,7 @@ public class FortuneController {
 
 	private final Logger logger = Logger.getLogger(getClass().getName());
 
-	@RequestMapping("/fortuneService")
+	@RequestMapping("/")
 	public String showFortuneService(Model model){
 		FortuneService fortuneService = new FortuneService();
 		model.addAttribute("fortuneService", fortuneService);
