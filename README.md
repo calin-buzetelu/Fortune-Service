@@ -1,6 +1,6 @@
 # Fortune-Service
 
-A Spring MVC web application providing you with your daily dose of random fortunes.
+A Spring MVC web application providing you with your daily dose of random sport fortunes.
 
 The idea was inspired from the Udemy course Spring & Hibernate for Beginners (includes Spring Boot) by Chad Darby.
 
