@@ -1,4 +1,4 @@
-# Fortune-Service
+# [Fortune-Service](https://fortune-service.herokuapp.com/)
 
 A Spring MVC web application providing you with your daily dose of random sport fortunes.
 
